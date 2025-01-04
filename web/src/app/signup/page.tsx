@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const SignupPage = () => {
   return (
     <div className="font-poppins flex min-h-screen flex-col items-center px-8 py-5">
@@ -23,9 +25,9 @@ const SignupPage = () => {
             className="font-poppins mb-4 w-full rounded-md border-[1.5px] border-black p-3 text-black outline-none"
           />
         </div>
-        <button className="font-poppins w-full rounded-md bg-black p-3 text-white dark:bg-white dark:text-black">
+        <Button className="w-full" size={"lg"}>
           Connect
-        </button>
+        </Button>
 
         <div className="mt-3 flex justify-between">
           <div>

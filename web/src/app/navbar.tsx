@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
@@ -13,7 +15,9 @@ const Navbar = () => {
       <div className="flex items-center justify-center gap-3">
         <h1 className="font-dm-serif flex items-center justify-center gap-2 text-4xl font-bold">
           {" "}
-          Logo
+          <Link href="/" className="pointer">
+            Logo
+          </Link>
         </h1>
 
         {/* <div className="flex items-center gap-3">

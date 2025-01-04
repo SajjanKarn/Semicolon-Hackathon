@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 import metamaskSvg from "./_assets/metamask";
 import phantomSvg from "./_assets/phantom";
 
@@ -6,21 +8,21 @@ const WalletConnectPage = () => {
     <div className="font-poppins flex min-h-screen flex-col items-center justify-center px-8 py-5">
       <div className="w-full max-w-md rounded-lg bg-white p-3 dark:border dark:border-gray-700 dark:bg-[#09090B] dark:p-5">
         <h1 className="mb-8 text-3xl capitalize">Connect Your Wallet</h1>
-        <button className="mb-4 flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 dark:border-gray-700">
+        <button className="mb-4 flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 transition-opacity hover:bg-gray-200 dark:hover:bg-gray-700">
           {phantomSvg()}
           <span className="ml-3">Phantom</span>
         </button>
-        <button className="mb-4 flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 dark:border-gray-700">
+        <button className="mb-4 flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 transition-opacity hover:bg-gray-200 dark:hover:bg-gray-700">
           {metamaskSvg()}
           <span className="ml-3">Metamask</span>
         </button>
-        <button className="flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 dark:border-gray-700">
+        <button className="flex w-full items-center justify-start rounded-md border-[1.5px] border-black p-3 transition-opacity hover:bg-gray-200 dark:hover:bg-gray-700">
           {metamaskSvg()}
           <span className="ml-3">Solfare</span>
         </button>
-        <button className="font-poppins mt-3 w-full rounded-md bg-black p-3 text-white dark:bg-white dark:text-black">
+        <Button className="mt-3 w-full" size={"lg"}>
           Connect
-        </button>
+        </Button>
         <div className="mt-4 flex justify-between">
           <div>
             <input
