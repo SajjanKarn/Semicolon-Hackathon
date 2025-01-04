@@ -1,7 +1,3 @@
-import Link from "next/link";
-
-import { Package } from "lucide-react";
-
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
@@ -13,14 +9,14 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between border p-5">
+    <div className="flex items-center justify-between px-16 py-8">
       <div className="flex items-center justify-center gap-3">
-        <h1 className="flex items-center justify-center gap-2 text-xl font-bold">
+        <h1 className="font-dm-serif flex items-center justify-center gap-2 text-4xl font-bold">
           {" "}
-          <Package /> Nextjs Starter
+          Logo
         </h1>
 
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           {links.map((link) => (
             <Link
               key={link.url}
@@ -30,7 +26,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
       <ThemeToggle />
     </div>
